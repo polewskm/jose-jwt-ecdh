@@ -69,7 +69,7 @@ Console.WriteLine($"Derived Key #1 = {Convert.ToBase64String(derivedKey1)}");
 // K(i) = H(counter || Z || OtherInfo)
 // DerivedKeyingMaterial = K(1) || K(2) || … || K(reps-1) || K_Last
 // So knowing that:
-// - this library supports a maximum keydatalen of 256
+// - jose-jwt supports a maximum keydatalen of 256
 // - and hashlen=256
 // then reps will always be 1
 const int reps = 1;
